@@ -7,9 +7,9 @@ import java.util.*;
 public class ClientHandler implements Runnable{
 	
 	public static ArrayList<ClientHandler> clientHandlers = new ArrayList<>();
-	private Socket socket; // ясен хуй сокет
+	private Socket socket;
 	private BufferedReader bufferedReader; // эта фигня для чтения текста из потока IO 
-	private BufferedWriter bufferedWriter; // тут по названию понятно, что почти то же самое
+	private BufferedWriter bufferedWriter;
 	private String clientUsername;
 	
 	public ClientHandler(Socket socket) {
